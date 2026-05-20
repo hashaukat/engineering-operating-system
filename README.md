@@ -66,6 +66,7 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 | [career-ladders.md](docs/career-ladders.md) | IC and management tracks, IC4–IC8 / M3–M6 |
 | [hiring-process.md](docs/hiring-process.md) | Sourcing, loop design, bar raising, and onboarding |
 | [ai-assisted-development-policy.md](docs/ai-assisted-development-policy.md) | How we use Copilot, agents, and evals safely |
+| [common-pitfalls.md](docs/common-pitfalls.md) | The 40 avoidable mistakes this operating system is designed to prevent, mapped to the antidote |
 
 ### `templates/` — what teams actually use
 - [spec-template.md](templates/spec-template.md) — the spec-driven development working artifact
@@ -90,6 +91,7 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 - **If you have 5 minutes:** read this README and [operating principles](docs/operating-principles.md).
 - **If you have 20 minutes:** add [AI-first stance](docs/ai-first-stance.md), [spec-driven development](docs/spec-driven-development.md), and the [mock Q3 plan](examples/mock-q3-engineering-plan.md).
 - **If you have an hour:** read everything in `docs/` in the order listed in the table above.
+- **If you are stress-testing this system:** read [common-pitfalls.md](docs/common-pitfalls.md) — the 40 well-known engineering-org failure modes and the specific antidote in this EOS for each.
 
 ---
 
