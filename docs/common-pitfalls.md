@@ -4,7 +4,7 @@
 
 Most engineering-org failure modes are not novel. They have been described, post-mortemed, and written about for decades — by Will Larson, Camille Fournier, Charity Majors, Lara Hogan, Gergely Orosz, Patrick Kua, the DORA/Accelerate research team, and the authors of *Team Topologies*, among others.
 
-This document catalogs **40 well-known, avoidable pitfalls** that quietly destroy engineering organizations, grouped into 8 categories. For each, it points to the doc, template, or example in this Engineering Operating System (EOS) that is specifically designed to prevent it.
+This document catalogs **48 well-known, avoidable pitfalls** that quietly destroy engineering organizations, grouped into 9 categories. For each, it points to the doc, template, or example in this Engineering Operating System (EOS) that is specifically designed to prevent it.
 
 Read this as a **leading indicator checklist**: if you recognize your org in three or more pitfalls in any single category, that's the section of the EOS to invest in next.
 
@@ -93,16 +93,31 @@ These are the new ones. They are also the most expensive in 2026.
 
 ---
 
-## 8. Leadership behaviors
+## 8. Decision-making & AI gullibility
+
+The newest — and least-discussed — category. These are the failure modes that quietly compound in an AI-first org until something breaks publicly.
+
+35. **No named Approver.** "We" decided. Which means nobody decided, and nobody is accountable when the decision turns out to be wrong. Every significant decision has *one* Approver. → [decision-making.md](decision-making.md), [decision-record-template.md](../templates/decision-record-template.md)
+36. **Confusing Type 1 and Type 2 decisions.** Debating a reversible decision for a quarter, or making an irreversible one in Slack. The bucket determines the process; misclassification is the most common cause of either over-deliberation or under-deliberation. → [decision-making.md](decision-making.md)
+37. **No pre-mortem on Type 1 decisions.** Big bets made without anyone asked "how will this fail?" Pre-mortems surface what group dynamics suppress. → [decision-making.md](decision-making.md)
+38. **No decision log.** Two years later, the next leader inherits the architecture, the process, the org shape — with no record of *why*. They rebuild the same wrong thing because the reasoning evaporated. → [decision-making.md](decision-making.md), [architecture-decision-record.md](../templates/architecture-decision-record.md), [decision-record-template.md](../templates/decision-record-template.md)
+39. **Rubber-stamping AI recommendations.** A confident model suggestion + a busy human Approver = a decision the org made without anyone actually thinking. The cost is paid in production, by customers, on someone's pager. → [critical-thinking-with-ai.md](critical-thinking-with-ai.md), [decision-making.md](decision-making.md)
+40. **Sycophancy mistaken for correctness.** The model agreed with your framing, so you concluded you were right. Modern LLMs are empirically sycophantic; we design around it by prompting for dissent and pushing back on unqualified agreement. → [critical-thinking-with-ai.md](critical-thinking-with-ai.md)
+41. **Unverified AI citations and APIs.** Numbers, papers, library methods quoted from a model and used as evidence — without a single click to confirm they exist. Hallucinated citations are a known, daily failure mode. → [critical-thinking-with-ai.md](critical-thinking-with-ai.md), [ai-assisted-development-policy.md](ai-assisted-development-policy.md)
+42. **Shrinking pushback over time.** Engineers gradually challenge AI less because it's *usually* right. Then the unusual cases — which are the only ones that matter — ship unread. → [critical-thinking-with-ai.md](critical-thinking-with-ai.md)
+
+---
+
+## 9. Leadership behaviors
 
 The pitfalls leaders most often blame on "the org" are usually the leader's own.
 
-35. **The hero CTO.** Every important decision routes through one person. The org's throughput is capped at that person's calendar, and succession is impossible. → [operating-principles.md](operating-principles.md), [career-ladders.md](career-ladders.md)
-36. **Status-meeting theater.** Weekly meetings whose only output is more meetings. The cure: standing written updates, async by default, meetings reserved for decisions. → [planning-rhythm.md](planning-rhythm.md), [operating-principles.md](operating-principles.md)
-37. **No operating principles, or principles that are wallpaper.** Principles that nobody can recite and nobody uses in actual decisions. Principles must be invoked when trading off, or they're decoration. → [operating-principles.md](operating-principles.md)
-38. **Treating engineering as a cost center.** Reporting engineering only as headcount and burn, never as throughput, reliability, and customer-value creation. Boards then optimize for the only thing they can see — cost. → [metrics-scorecard.md](metrics-scorecard.md), [productivity-measurement.md](productivity-measurement.md)
-39. **Optimizing for activity over outcomes.** Velocity, story points, PR counts. The DORA program has, year over year, shown that *outcome* metrics (delivery + reliability + org performance) are what predict business results. → [productivity-measurement.md](productivity-measurement.md), source: [DORA Research Program](https://dora.dev/research/)
-40. **No learning loop.** Quarterly reviews that celebrate hits and bury misses. Without an honest retrospective, the org learns nothing and the same pitfalls return — which is why this document exists. → [planning-rhythm.md](planning-rhythm.md), [incident-management.md](incident-management.md), [operating-principles.md](operating-principles.md)
+43. **The hero CTO.** Every important decision routes through one person. The org's throughput is capped at that person's calendar, and succession is impossible. → [operating-principles.md](operating-principles.md), [career-ladders.md](career-ladders.md)
+44. **Status-meeting theater.** Weekly meetings whose only output is more meetings. The cure: standing written updates, async by default, meetings reserved for decisions. → [planning-rhythm.md](planning-rhythm.md), [operating-principles.md](operating-principles.md)
+45. **No operating principles, or principles that are wallpaper.** Principles that nobody can recite and nobody uses in actual decisions. Principles must be invoked when trading off, or they're decoration. → [operating-principles.md](operating-principles.md)
+46. **Treating engineering as a cost center.** Reporting engineering only as headcount and burn, never as throughput, reliability, and customer-value creation. Boards then optimize for the only thing they can see — cost. → [metrics-scorecard.md](metrics-scorecard.md), [productivity-measurement.md](productivity-measurement.md)
+47. **Optimizing for activity over outcomes.** Velocity, story points, PR counts. The DORA program has, year over year, shown that *outcome* metrics (delivery + reliability + org performance) are what predict business results. → [productivity-measurement.md](productivity-measurement.md), source: [DORA Research Program](https://dora.dev/research/)
+48. **No learning loop.** Quarterly reviews that celebrate hits and bury misses. Without an honest retrospective, the org learns nothing and the same pitfalls return — which is why this document exists. → [planning-rhythm.md](planning-rhythm.md), [incident-management.md](incident-management.md), [operating-principles.md](operating-principles.md)
 
 ---
 
@@ -110,7 +125,7 @@ The pitfalls leaders most often blame on "the org" are usually the leader's own.
 
 - **For self-assessment:** Score each pitfall 0 (we don't do this) / 1 (we sometimes do this) / 2 (we routinely do this). Anything ≥1 in three pitfalls of the same category indicates a systemic gap, not a one-off.
 - **For onboarding new leaders:** Hand this to a new VP/director in their first week alongside [operating-principles.md](operating-principles.md). Ask them which 5 they've personally caused or witnessed. The conversation calibrates faster than any leveling guide.
-- **For board / exec reviews:** When asked "what could go wrong with the eng org?", this is the honest answer in 40 bullets — and the EOS column shows the standing prevention mechanism for each.
+- **For board / exec reviews:** When asked "what could go wrong with the eng org?", this is the honest answer in 48 bullets — and the EOS column shows the standing prevention mechanism for each.
 
 ---
 

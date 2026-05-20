@@ -13,6 +13,10 @@
 3. **Sensitive data does not leave approved tools.** Customer data, secrets, PII, and unreleased financials are only sent to AI tools on the approved list, configured per our data agreement.
 4. **High-stakes systems require dual control.** Changes to auth, payments, data deletion, infra security, and model training pipelines require a human-authored review *and* a second human approver, regardless of how the code was generated.
 
+## The verification stance
+
+Accountability without verification is just blame waiting to happen. Every engineer is expected to **question, verify, and push back** on AI output proportional to the stake of the change. The full doctrine — sycophancy as a known failure mode, calibrated trust by domain, the three habits, the cultural norm that pushback is kindness — lives in [critical thinking with AI](critical-thinking-with-ai.md). It is required reading in onboarding and reinforced in code review, design, hiring, leveling, and postmortems.
+
 ## What is encouraged
 
 - **Code generation, refactors, scaffolding.** Yes.

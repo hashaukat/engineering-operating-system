@@ -10,13 +10,14 @@ It is a **leadership artifact**, not a code repository. The goal is a single, co
 
 ## The AI-first stance
 
-Everything in this repo is built around five claims about how the best software organizations operate today:
+Everything in this repo is built around six claims about how the best software organizations operate today:
 
 1. **Specs, not code, are the durable artifact.** Code is increasingly generated; the specification is what engineers own. See [spec-driven development](docs/spec-driven-development.md).
 2. **AI is in the default path** for discovery, design, build, ship, operate, and learn — with humans as the author of record at every gate. See [AI policy](docs/ai-assisted-development-policy.md).
-3. **Productivity is measured as customer value delivered per unit time**, not as activity. See [productivity measurement](docs/productivity-measurement.md).
-4. **Time-to-market is a first-class metric** alongside reliability and quality.
-5. **Customer satisfaction is engineering's scoreboard**, not just product's — CSAT, NPS, Time-to-Value, Customer Effort Score.
+3. **Decision-making is a first-class engineering skill** — taught, practiced, and measured — because AI raises the supply of plausible options to near-infinite, and judgment is now the scarce resource. See [decision-making](docs/decision-making.md).
+4. **We question, verify, and push back on AI** the way we do with a respected peer. Sycophancy and confident-wrongness are the most expensive failure modes of an AI-first org. See [critical thinking with AI](docs/critical-thinking-with-ai.md).
+5. **Productivity is measured as customer value delivered per unit time**, not as activity. See [productivity measurement](docs/productivity-measurement.md).
+6. **Customer satisfaction is engineering's scoreboard**, not just product's — CSAT, NPS, Time-to-Value, Customer Effort Score, alongside Time-to-Market, reliability, and quality.
 
 The full position is in [docs/ai-first-stance.md](docs/ai-first-stance.md).
 
@@ -53,7 +54,9 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 |---|---|
 | [ai-first-stance.md](docs/ai-first-stance.md) | What "AI-first" actually means and what changes because of it |
 | [engineering-strategy.md](docs/engineering-strategy.md) | The 3-horizon strategy and how engineering compounds business value |
-| [operating-principles.md](docs/operating-principles.md) | The 10 principles I use to make decisions |
+| [operating-principles.md](docs/operating-principles.md) | The 12 principles I use to make decisions |
+| [decision-making.md](docs/decision-making.md) | Decision-making as a first-class engineering skill: door types, DACI, pre-mortems, calibrated confidence, decision logs |
+| [critical-thinking-with-ai.md](docs/critical-thinking-with-ai.md) | Question, verify, push back: the anti-gullibility doctrine for an AI-first org |
 | [spec-driven-development.md](docs/spec-driven-development.md) | Specs as the durable artifact; how teams ship in an AI-augmented world |
 | [org-design.md](docs/org-design.md) | How I structure reporting lines, spans, and layers |
 | [team-topologies.md](docs/team-topologies.md) | Stream-aligned, platform, enabling, and complicated-subsystem teams |
@@ -70,6 +73,7 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 
 ### `templates/` — what teams actually use
 - [spec-template.md](templates/spec-template.md) — the spec-driven development working artifact
+- [decision-record-template.md](templates/decision-record-template.md) — lightweight non-architectural decision record
 - [ai-feature-eval-template.md](templates/ai-feature-eval-template.md) — eval suite for customer-facing AI
 - [quarterly-planning-template.md](templates/quarterly-planning-template.md)
 - [architecture-decision-record.md](templates/architecture-decision-record.md)
@@ -89,7 +93,7 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 ## How to read this repo
 
 - **If you have 5 minutes:** read this README and [operating principles](docs/operating-principles.md).
-- **If you have 20 minutes:** add [AI-first stance](docs/ai-first-stance.md), [spec-driven development](docs/spec-driven-development.md), and the [mock Q3 plan](examples/mock-q3-engineering-plan.md).
+- **If you have 20 minutes:** add [AI-first stance](docs/ai-first-stance.md), [decision-making](docs/decision-making.md), [critical thinking with AI](docs/critical-thinking-with-ai.md), and the [mock Q3 plan](examples/mock-q3-engineering-plan.md).
 - **If you have an hour:** read everything in `docs/` in the order listed in the table above.
 - **If you are stress-testing this system:** read [common-pitfalls.md](docs/common-pitfalls.md) — the 40 well-known engineering-org failure modes and the specific antidote in this EOS for each.
 

@@ -2,7 +2,7 @@
 
 > Principles exist so that decisions are consistent without consultation. If two engineers in different teams hit the same fork in the road, they should choose the same path for the same reason.
 
-These are the 10 principles I install and defend.
+These are the 12 principles I install and defend.
 
 ---
 
@@ -27,13 +27,19 @@ Disagree and commit only works if the disagreement was actually heard. Every sig
 ### 7. AI is a power tool, not an oracle
 Use AI to raise the floor of every engineer's productivity. Never delegate accountability. Every AI-assisted output passes through the same review, test, and security gates as human output. See [AI policy](ai-assisted-development-policy.md).
 
-### 8. Promote the behavior, not just the result
+### 8. Decision-making is a craft we practice on purpose
+Classify the door before choosing the process: Type 1 (one-way) decisions are made slowly and in writing; Type 2 (two-way) decisions are made fast by the closest informed person. Every significant decision names a *single* Approver, pre-commits to what would change our mind, and gets logged. We promote people who make our org's decisions better. See [decision-making](decision-making.md).
+
+### 9. Question, verify, push back — especially with AI
+We treat AI output the way we treat a confident answer from a smart, new teammate: with respect, curiosity, *and* verification. Sycophancy and confident-wrongness are known failure modes; we design around them. Pushing back — on peers and on models — is how we help each other ship better work. Silence is not kindness. See [critical thinking with AI](critical-thinking-with-ai.md).
+
+### 10. Promote the behavior, not just the result
 We reward engineers who *make the org better*, not only those who ship the loudest. Mentoring, paved roads, and incident-learning count.
 
-### 9. Teams are the unit of delivery
+### 11. Teams are the unit of delivery
 We design work, planning, and architecture around durable teams ([team topologies](team-topologies.md)) — not projects, not individuals. Resourcing a team is a multi-quarter commitment.
 
-### 10. Calm is a competitive advantage
+### 12. Calm is a competitive advantage
 Heroics signal a broken system. Sustainable pace, on-call rotations that respect humans, and humane escalation paths produce better software than panic ever has.
 
 ---

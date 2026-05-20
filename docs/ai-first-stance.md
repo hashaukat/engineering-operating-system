@@ -55,15 +55,18 @@ Equally important, harder to ship:
 1. **Engineers are paid to think, not to type.** Reward the rejection of a bad AI suggestion as visibly as the acceptance of a good one.
 2. **The team is the unit of AI adoption.** Not individuals. Teams set norms, measure together, learn together.
 3. **Failure modes are first-class learning.** When an AI-assisted change causes an incident, the postmortem studies the *judgment failure*, not the tool.
-4. **Skepticism is a senior skill.** Staff+ engineers are the org's immune system against confident wrongness.
-5. **Customers are the only scoreboard.** Speed without satisfaction is theater.
+4. **Skepticism is a senior skill.** Staff+ engineers are the org's immune system against confident wrongness. We *question, verify, and push back* on AI output the way we do on a respected peer's proposal — see [critical thinking with AI](critical-thinking-with-ai.md).
+5. **Decision-making is the craft AI does not replace.** AI expands the option space; humans classify the door, name the Approver, and own the outcome — see [decision-making](decision-making.md).
+6. **Customers are the only scoreboard.** Speed without satisfaction is theater.
 
 ## How this stance shows up across the EOS
 
 | Doc | AI-first implication |
 |---|---|
 | [Engineering strategy](engineering-strategy.md) | AI is treated as a horizon-2 multiplier and a horizon-3 disruptor — both invested in |
-| [Operating principles](operating-principles.md) | Principle 7: "AI is a power tool, not an oracle" |
+| [Operating principles](operating-principles.md) | Principle 7: "AI is a power tool, not an oracle"; Principle 8: "Decision-making is a craft we practice on purpose"; Principle 9: "Question, verify, push back — especially with AI" |
+| [Decision-making](decision-making.md) | Decision quality and decision velocity are explicit org skills, taught and measured |
+| [Critical thinking with AI](critical-thinking-with-ai.md) | The anti-gullibility doctrine: how we question, verify, and push back |
 | [Org design](org-design.md) | Director of AI & ML Engineering on the leadership team from day one |
 | [Team topologies](team-topologies.md) | Applied AI as a complicated-subsystem team; AI Adoption as an enabling team |
 | [Planning rhythm](planning-rhythm.md) | Each plan states the spec-shipping target and the AI-leverage assumption |
