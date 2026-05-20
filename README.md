@@ -52,6 +52,7 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 ### `docs/` — the operating model
 | Document | Purpose |
 |---|---|
+| [start-here-for-new-managers.md](docs/start-here-for-new-managers.md) | **Start here.** The whole-story walkthrough: Week 1 → 30 days → quarter → year |
 | [ai-first-stance.md](docs/ai-first-stance.md) | What "AI-first" actually means and what changes because of it |
 | [engineering-strategy.md](docs/engineering-strategy.md) | The 3-horizon strategy and how engineering compounds business value |
 | [operating-principles.md](docs/operating-principles.md) | The 12 principles I use to make decisions |
@@ -62,6 +63,12 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 | [team-topologies.md](docs/team-topologies.md) | Stream-aligned, platform, enabling, and complicated-subsystem teams |
 | [planning-rhythm.md](docs/planning-rhythm.md) | Annual → quarterly → sprint cadence |
 | [execution-model.md](docs/execution-model.md) | How work flows from intent to production |
+| [developer-experience.md](docs/developer-experience.md) | The paved roads, the platform, and the DevEx promise that makes the system livable |
+| [quality-engineering.md](docs/quality-engineering.md) | Testing, gates, flakiness policy, and evals as a parallel quality pyramid |
+| [release-engineering.md](docs/release-engineering.md) | Decoupling deployment from release; canary, flags, kill switches, AI-feature rollout |
+| [security-and-supply-chain.md](docs/security-and-supply-chain.md) | Provenance, SBOMs, SLSA, AppSec, AI-specific threats, and incident response |
+| [data-and-privacy-governance.md](docs/data-and-privacy-governance.md) | Classification, consent, retention, AI training data, RAG, regulatory baseline |
+| [engineering-finops.md](docs/engineering-finops.md) | Cost as a first-class signal, including AI inference cost management |
 | [productivity-measurement.md](docs/productivity-measurement.md) | DORA + SPACE + DX + AI metrics + TTM + customer value, unified |
 | [metrics-scorecard.md](docs/metrics-scorecard.md) | The leadership scorecard rolled up across all measurement lenses |
 | [incident-management.md](docs/incident-management.md) | On-call, severity, command, and learning |
@@ -69,7 +76,8 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 | [career-ladders.md](docs/career-ladders.md) | IC and management tracks, IC4–IC8 / M3–M6 |
 | [hiring-process.md](docs/hiring-process.md) | Sourcing, loop design, bar raising, and onboarding |
 | [ai-assisted-development-policy.md](docs/ai-assisted-development-policy.md) | How we use Copilot, agents, and evals safely |
-| [common-pitfalls.md](docs/common-pitfalls.md) | The 40 avoidable mistakes this operating system is designed to prevent, mapped to the antidote |
+| [ai-agent-governance.md](docs/ai-agent-governance.md) | Governance for autonomous agents that *act*: scoping, identity, kill switches, review |
+| [common-pitfalls.md](docs/common-pitfalls.md) | The avoidable mistakes this operating system is designed to prevent, mapped to the antidote |
 
 ### `templates/` — what teams actually use
 - [spec-template.md](templates/spec-template.md) — the spec-driven development working artifact
@@ -92,10 +100,11 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 
 ## How to read this repo
 
+- **If you are a new-ish manager and want the whole story:** start with [start-here-for-new-managers.md](docs/start-here-for-new-managers.md) — it walks you from Week 1 through your first year using the rest of this repo.
 - **If you have 5 minutes:** read this README and [operating principles](docs/operating-principles.md).
 - **If you have 20 minutes:** add [AI-first stance](docs/ai-first-stance.md), [decision-making](docs/decision-making.md), [critical thinking with AI](docs/critical-thinking-with-ai.md), and the [mock Q3 plan](examples/mock-q3-engineering-plan.md).
 - **If you have an hour:** read everything in `docs/` in the order listed in the table above.
-- **If you are stress-testing this system:** read [common-pitfalls.md](docs/common-pitfalls.md) — the 40 well-known engineering-org failure modes and the specific antidote in this EOS for each.
+- **If you are stress-testing this system:** read [common-pitfalls.md](docs/common-pitfalls.md) — the well-known engineering-org failure modes and the specific antidote in this EOS for each.
 
 ---
 

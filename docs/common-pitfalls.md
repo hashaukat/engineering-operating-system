@@ -4,7 +4,7 @@
 
 Most engineering-org failure modes are not novel. They have been described, post-mortemed, and written about for decades — by Will Larson, Camille Fournier, Charity Majors, Lara Hogan, Gergely Orosz, Patrick Kua, the DORA/Accelerate research team, and the authors of *Team Topologies*, among others.
 
-This document catalogs **48 well-known, avoidable pitfalls** that quietly destroy engineering organizations, grouped into 9 categories. For each, it points to the doc, template, or example in this Engineering Operating System (EOS) that is specifically designed to prevent it.
+This document catalogs **60 well-known, avoidable pitfalls** that quietly destroy engineering organizations, grouped into 10 categories. For each, it points to the doc, template, or example in this Engineering Operating System (EOS) that is specifically designed to prevent it.
 
 Read this as a **leading indicator checklist**: if you recognize your org in three or more pitfalls in any single category, that's the section of the EOS to invest in next.
 
@@ -121,11 +121,30 @@ The pitfalls leaders most often blame on "the org" are usually the leader's own.
 
 ---
 
+## 10. Platform, supply chain, data, cost & agents
+
+The operational pitfalls that scale with the company and disproportionately damage AI-first orgs. Each is a known incident class waiting to happen.
+
+49. **No paved road.** Every team picks its own framework, CI, deploy mechanism, and observability stack. Looks like autonomy; functions as friction tax and a security surface explosion. → [developer-experience.md](developer-experience.md), [team-topologies.md](team-topologies.md)
+50. **Flaky tests tolerated.** A 5% flake rate teaches engineers to retry CI on red. Six months later, the suite is decorative and incidents are slipping through. → [quality-engineering.md](quality-engineering.md)
+51. **AI features without evals.** Already in section 7; restated here because it is *the* highest-leverage operational gap. No evals = no release gate = drift in production. → [quality-engineering.md](quality-engineering.md), [ai-feature-eval-template.md](../templates/ai-feature-eval-template.md)
+52. **Manual deploys to production.** "It's faster to just SSH in." Faster on day one, source of the weekend incident on day ninety. → [release-engineering.md](release-engineering.md), [developer-experience.md](developer-experience.md)
+53. **Feature flags with no expiration.** Six-month-old flags become architecture; the codebase becomes unreadable; the on-call cannot reason about live behavior. → [release-engineering.md](release-engineering.md)
+54. **No SBOM, no provenance.** When the next supply-chain attack lands, you cannot answer "are we affected?" in under an hour. That answer is required. → [security-and-supply-chain.md](security-and-supply-chain.md)
+55. **Secrets in code or CI logs.** Discovered at a vendor audit, or worse, in a public repo. Every secret is one rotation and one human-error away from a breach. → [security-and-supply-chain.md](security-and-supply-chain.md)
+56. **Prompt injection treated as theoretical.** The agent reads a webpage that says "ignore previous instructions" — and does. Designed-in vulnerability, named in [OWASP Top 10 for LLMs](https://owasp.org/www-project-top-10-for-large-language-model-applications/). → [security-and-supply-chain.md](security-and-supply-chain.md), [ai-agent-governance.md](ai-agent-governance.md)
+57. **AI cost without budgets.** "Just turn it on." Six months later, surprise on the monthly invoice and a panicked optimization sprint. → [engineering-finops.md](engineering-finops.md), [ai-first-stance.md](ai-first-stance.md)
+58. **Untagged cloud spend.** A meaningful share of the bill belongs to "unknown." Cost cannot be attributed, decisions cannot be made, FinOps becomes a finance complaint instead of an engineering decision. → [engineering-finops.md](engineering-finops.md)
+59. **Customer data used quietly for AI training.** Trained on data the customer didn't consent to. When discovered, this is a regulator-grade incident, not a cleanup. → [data-and-privacy-governance.md](data-and-privacy-governance.md), [ai-assisted-development-policy.md](ai-assisted-development-policy.md)
+60. **Agents in production without kill switches or scoping.** A demo became a deployment. There is no off button, no rate limit, no audit trail, and the credentials are "read-write-everything for convenience." The first bad day is catastrophic. → [ai-agent-governance.md](ai-agent-governance.md), [security-and-supply-chain.md](security-and-supply-chain.md), [release-engineering.md](release-engineering.md)
+
+---
+
 ## How to use this list
 
 - **For self-assessment:** Score each pitfall 0 (we don't do this) / 1 (we sometimes do this) / 2 (we routinely do this). Anything ≥1 in three pitfalls of the same category indicates a systemic gap, not a one-off.
 - **For onboarding new leaders:** Hand this to a new VP/director in their first week alongside [operating-principles.md](operating-principles.md). Ask them which 5 they've personally caused or witnessed. The conversation calibrates faster than any leveling guide.
-- **For board / exec reviews:** When asked "what could go wrong with the eng org?", this is the honest answer in 48 bullets — and the EOS column shows the standing prevention mechanism for each.
+- **For board / exec reviews:** When asked "what could go wrong with the eng org?", this is the honest answer in 60 bullets — and the EOS column shows the standing prevention mechanism for each.
 
 ---
 
