@@ -22,6 +22,10 @@ Everything in `docs/`, `templates/`, `skills/`, and `examples/` is **userspace**
 
 The operational counterpart to the kernel is **[crontab.md](crontab.md)** — the list of scheduled jobs the org runs (daily, weekly, monthly, quarterly, annually), each with a named human owner and an explicit role for AI agents. In an AI-first world, agents *run* most of these; humans *own* the output. The crontab is where that boundary gets concrete.
 
+The registry of those agents is **[agents.md](agents.md)** — every autonomous or semi-autonomous agent the org runs in production, scoped, owned, killable, and evaluated. If an agent is not in this file, it is not allowed to act.
+
+And if you are *installing* this OS into a real organization, the boot sequence is **[operating-manual.md](operating-manual.md)**: phase by phase, week by week, from diagnosis through compounding.
+
 ---
 
 ## The AI-first stance
@@ -70,6 +74,12 @@ The smallest, always-running, load-bearing layer. Three primitives + one substra
 
 ### `crontab.md` — the scheduled jobs
 The org's recurring jobs (daily → annual) with named owners, agent roles, and required artifacts. The kernel's scheduler made concrete. See **[crontab.md](crontab.md)**.
+
+### `agents.md` — the agent registry
+Every production AI agent: owner, trust tier, scope, identity, kill switch, audit log, eval suite, blast radius. If it's not in this file, it doesn't run. See **[agents.md](agents.md)**.
+
+### `operating-manual.md` — the install guide
+The boot sequence. How a new VP/CTO installs this OS, phase by phase, from Week 1 diagnosis through compounding. See **[operating-manual.md](operating-manual.md)**.
 
 ### `docs/` — the operating model
 | Document | Purpose |
@@ -132,6 +142,7 @@ The docs are the policy; the [skills library](skills/README.md) is the muscle. 1
 
 - **If you have 2 minutes:** read **[kernel.md](kernel.md)**. That is the whole system in one page.
 - **If you have 5 more minutes:** read **[crontab.md](crontab.md)** — the scheduled jobs that exercise the kernel, with agent roles named.
+- **If you are installing this in a real org:** read **[operating-manual.md](operating-manual.md)** — phase by phase, week by week.
 - **If you are a new-ish manager and want the whole story:** start with [start-here-for-new-managers.md](docs/start-here-for-new-managers.md) — it walks you from Week 1 through your first year using the rest of this repo.
 - **If you have 5 minutes:** read this README, [kernel.md](kernel.md), and [operating principles](docs/operating-principles.md).
 - **If you have 20 minutes:** add [AI-first stance](docs/ai-first-stance.md), [decision-making](docs/decision-making.md), [critical thinking with AI](docs/critical-thinking-with-ai.md), and the [mock Q3 plan](examples/mock-q3-engineering-plan.md).
