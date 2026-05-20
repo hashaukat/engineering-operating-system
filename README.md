@@ -96,6 +96,14 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 - [sample-okr-scorecard.md](examples/sample-okr-scorecard.md)
 - [sample-spec-checkout-idempotency.md](examples/sample-spec-checkout-idempotency.md) — a worked spec-driven example
 
+### `skills/` — the tunable practice library
+The docs are the policy; the [skills library](skills/README.md) is the muscle. 16 essential, generic skills — foundational, engineering, management, leadership — each written to be **tuned**, not adopted verbatim, with practice, drills, failure modes, and named further reading.
+
+- **Foundational (everyone):** [critical-thinking-and-judgment](skills/critical-thinking-and-judgment.md), [working-with-ai](skills/working-with-ai.md), [technical-writing](skills/technical-writing.md), [giving-and-receiving-feedback](skills/giving-and-receiving-feedback.md)
+- **Engineering craft:** [writing-specs](skills/writing-specs.md), [code-review](skills/code-review.md), [debugging](skills/debugging.md), [incident-response](skills/incident-response.md), [estimation-and-forecasting](skills/estimation-and-forecasting.md)
+- **Management craft:** [running-one-on-ones](skills/running-one-on-ones.md), [coaching-and-growth](skills/coaching-and-growth.md), [hiring-and-interviewing](skills/hiring-and-interviewing.md), [running-effective-meetings](skills/running-effective-meetings.md)
+- **Leadership craft:** [strategic-thinking](skills/strategic-thinking.md), [prioritization-and-saying-no](skills/prioritization-and-saying-no.md), [influence-and-executive-communication](skills/influence-and-executive-communication.md)
+
 ---
 
 ## How to read this repo
