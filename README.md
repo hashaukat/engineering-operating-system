@@ -8,6 +8,20 @@ It is a **leadership artifact**, not a code repository. The goal is a single, co
 
 ---
 
+## The kernel
+
+Like any operating system, this one has a **kernel** — the small, load-bearing core that everything else composes on. It is three primitives, one substrate, and one scheduler:
+
+- **Substrate:** trust and psychological safety.
+- **Primitive 1:** **Write it down.** Specs, decisions, postmortems, status.
+- **Primitive 2:** **Decide and own it.** Named owner, type, rationale, reversal criterion.
+- **Primitive 3:** **Inspect reality.** Metrics, evals, postmortems, customer contact, honest status.
+- **Scheduler:** a weekly plan → execute → review → learn loop, at team, org, and leadership levels.
+
+Everything in `docs/`, `templates/`, `skills/`, and `examples/` is **userspace** — tunable per organization. The kernel is not. Read it first: **[kernel.md](kernel.md)**.
+
+---
+
 ## The AI-first stance
 
 Everything in this repo is built around six claims about how the best software organizations operate today:
@@ -48,6 +62,9 @@ Read the full plan in [examples/mock-q3-engineering-plan.md](examples/mock-q3-en
 ---
 
 ## Repository map
+
+### `kernel.md` — the irreducible core
+The smallest, always-running, load-bearing layer. Three primitives + one substrate + one scheduler. Read first. See **[kernel.md](kernel.md)**.
 
 ### `docs/` — the operating model
 | Document | Purpose |
@@ -108,8 +125,9 @@ The docs are the policy; the [skills library](skills/README.md) is the muscle. 1
 
 ## How to read this repo
 
+- **If you have 2 minutes:** read **[kernel.md](kernel.md)**. That is the whole system in one page.
 - **If you are a new-ish manager and want the whole story:** start with [start-here-for-new-managers.md](docs/start-here-for-new-managers.md) — it walks you from Week 1 through your first year using the rest of this repo.
-- **If you have 5 minutes:** read this README and [operating principles](docs/operating-principles.md).
+- **If you have 5 minutes:** read this README, [kernel.md](kernel.md), and [operating principles](docs/operating-principles.md).
 - **If you have 20 minutes:** add [AI-first stance](docs/ai-first-stance.md), [decision-making](docs/decision-making.md), [critical thinking with AI](docs/critical-thinking-with-ai.md), and the [mock Q3 plan](examples/mock-q3-engineering-plan.md).
 - **If you have an hour:** read everything in `docs/` in the order listed in the table above.
 - **If you are stress-testing this system:** read [common-pitfalls.md](docs/common-pitfalls.md) — the well-known engineering-org failure modes and the specific antidote in this EOS for each.
